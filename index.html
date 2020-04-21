@@ -1,0 +1,388 @@
+<html>
+
+<title>
+    FLUX!
+</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg " style="padding-top:0px; height: 60px; background-color: #203345;">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img src="icons/logo.png" height="40px" style="margin-top:10px; margin-left: 50px;" alt="">
+        </a>
+
+        <!-- button -->
+        <button class="navbar-toggler" style="background-color: whitesmoke;" type="button" data-toggle="navbar-collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- list options -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: white; margin-right:20px" href="#">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #b5bdbb;margin-right:20px" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #b5bdbb;margin-right:20px" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #b5bdbb; margin-right:30px" href="#">Kids</a>
+                </li>
+
+            </ul>
+
+            <!-- search -->
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control"
+                        style="background-color: #455662;border-radius: 5px 0px 0px 5px ;border : none;color:white"
+                        placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"
+                            style="background-color: #455662;border-radius: 0px 5px 5px 0px;border : none;"
+                            id="basic-addon1">
+                            <img src="icons/searchicon.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </form>
+
+            <!-- user icon -->
+            <span class="navbar-text">
+                <img src="icons/usericon.png" height="30px" style="margin-left: 15px; margin-right: 40px;" alt="">
+            </span>
+
+        </div>
+    </nav>
+
+    <!-- <div style="height: 80%;width: 70%;text-align: center;margin: 15px auto;">
+    </div> -->
+
+    <!-- topmost div -->
+    <style>
+        .topmost {
+            /* background-color: red; */
+            height: 65%;
+            width: 85%;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #banner {
+            height: 97%;
+            width: 22.5%;  
+            border-radius: 5px;
+            background-color: #203345;
+            /* box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4); */
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            transition: 0.3s ease-in-out;
+            background-image: url('posters/mh_vertical.jpg');
+        }
+
+        #banner:hover {
+            box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        #playmode {
+            height: 100%;
+            width: 75%;
+            /* background-color: yellow; */
+            border-radius: 5px;
+            /* background-color: #203345; */
+            /* box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4); */
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            transition: 0.3s ease-in-out;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(21, 37, 53, 0.3), rgba(21, 37, 53, 1)), url('posters/moneyheist.jpg');
+        }
+    </style>
+    <div class="topmost">
+        <div id="banner"></div>
+        <div id="playmode"></div>
+    </div>
+
+    <!-- fan fav -->
+    <div class="bb">
+        <span style="font-size: 25px;font-family: js-bold ;">| Fan Favourites</span>
+        <div class="bb-flex-container">
+            <a style="background-image: url(posters/mh.jpg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">La Casa De Papel</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">A criminal mastermind who goes by "The Professor" has a plan to pull off
+                        the biggest heist in recorded history.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">4 Seasons &nbsp&nbsp | &nbsp&nbsp 2017
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.8
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+            <a style="background-image: url(posters/inception.jpeg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Inception</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">"Inception" is an intense, complex story, but it's always coherent,
+                        imaginative, and entertaining.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">2hr 28min &nbsp&nbsp | &nbsp&nbsp 2010
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.8
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+            <a style="background-image: url(posters/gullyboy.jpg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Gully Boy</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">A coming-of-age story based on the lives of street
+                        rappers in Mumbai</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">2hr 33min &nbsp&nbsp | &nbsp&nbsp 2019
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.3
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+            <a style="background-image: url(posters/joker.jpg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Joker</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">Forever alone in a crowd, failed comedian Arthur Fleck seeks connection
+                        as he walks the streets of Gotham City.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">2hr 2min &nbsp&nbsp | &nbsp&nbsp 2019
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.5
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Bollywood Binge -->
+    <div class="bb">
+        <span style="font-size: 25px;font-family: js-bold ;">| Bollywood Binge</span>
+        <div class="bb-flex-container">
+            <a style="background-image: url(posters/yjhd.jpg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Yeh Jawani Hai Deewani</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">Kabir, a guy who wants to make it big in the travel industry, meets Naina
+                        during a trekking trip.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">2hr 56min &nbsp&nbsp | &nbsp&nbsp 2013
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.8
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+            <a style="background-image: url(posters/znmd.jpg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Zindagi Naa Milegi Dobara</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">Friends Kabir, Imran and Arjun take a vacation in Spain before Kabir's
+                        marriage.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">2hr 35min &nbsp&nbsp | &nbsp&nbsp 2011
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.8
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+            <a style="background-image: url(posters/karwaan.jpg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Karwaan</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">Avinash and his friend Shaukat decide to take a trip to Kochi to sort out
+                        a misunderstanding.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">2hr 5min &nbsp&nbsp | &nbsp&nbsp 2018
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.8
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+            <a style="background-image: url(posters/bmb.jpeg);" href="">
+                <div id="det">
+                    <div id="playdet">
+                        <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
+                        <div style="width: 80%;padding-left: 5%;">Bhaag Milkha Bhaag</div>
+                        <div> <img src="icons/plus.png" height="50%"></div>
+                    </div>
+                    <p style="font-size:11px;">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in
+                        order to become a world champion, Olympian and one of India's most iconic athletes.</p>
+                    <p style="font-size:10px;margin-top:5px;color : #778287;">3hr 9min &nbsp&nbsp | &nbsp&nbsp 2013
+                        &nbsp&nbsp | &nbsp&nbsp &#11088; 4.8
+                        <span id="ua">U/A</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- languages -->
+    <div class="lang">
+        <span style="font-size: 25px;font-family: js-bold ;">| Watch in you Language</span>
+        <div class="lang-flex-container">
+            <a style="background-image: url(icons/langicon/eng.png);" href="eng.html"></a>
+            <a style="background-image: url(icons/langicon/hindi.png);" href="hindi.html"></a>
+            <a style="background-image: url(icons/langicon/mar.png);" href="mar.html"></a>
+            <a style="background-image: url(icons/langicon/tel.png);" href="tel.html"></a>
+            <a style="background-image: url(icons/langicon/tamil.png);" href="tamil.html"></a>
+            <a style="background-image: url(icons/langicon/bengali.png);" href="bengali.html"></a>
+            <a style="background-image: url(icons/langicon/mallu.png);" href="mallu.html"></a>
+        </div>
+    </div>
+
+    <!-- top rated -->
+    <div class="tr">
+        <span style="font-size: 25px;font-family: js-bold ;">| Top Rated</span>
+        <div class="tr-flex-container">
+            <div> <a href="tr.html" style="text-decoration: none;">
+                    <div class="tr-poster" style="background-image: url('posters/avenger.jpg');"></div>
+                    <div class="tr-moviename-flex-container">
+                        <div id="one"></div>
+                        <div id="two">
+                            <div style="margin-top: 15px; font-size: 28px;">"The Avengers : Marvel Studios"</div>
+                            <div style="margin-top: 2px;color : #899398; font-size: 14px;">2 hr 33 min. | 2019 | 4.3
+                            </div>
+                        </div>
+                        <div id="three"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- choose by genre -->
+    <div class="cbg">
+        <span style="font-size: 25px;font-family: js-bold ;">| Choose by Genre</span>
+        <div class="cbg-flex-container">
+
+            <div> <a href="rom.html" style="text-decoration: none;">
+                    <div class="cbg-poster" style="background-image: url('posters/ddlj.jpg');"></div>
+                    <div class="cbg-moviename-flex-container">
+                        <div style="color: white;">Romance</div>
+                        <div style="font-size: 12px;color:#2a83f2;">+ Explore</div>
+                    </div>
+                </a>
+            </div>
+            <div> <a href="drama.html" style="text-decoration: none;">
+                    <div class="cbg-poster" style="background-image: url('posters/hindimedium.jpg');"></div>
+                    <div class="cbg-moviename-flex-container">
+                        <div style="color: white;">Drama</div>
+                        <div style="font-size: 12px;color:#2a83f2;">+ Explore</div>
+                    </div>
+                </a>
+            </div>
+            <div> <a href="action.html" style="text-decoration: none;">
+                    <div class="cbg-poster" style="background-image: url('posters/cw.jpg');"></div>
+                    <div class="cbg-moviename-flex-container">
+                        <div style="color: white;">Action</div>
+                        <div style="font-size: 12px;color:#2a83f2;">+ Explore</div>
+                    </div>
+                </a>
+            </div>
+            <div> <a href="comedy.html" style="text-decoration: none;">
+                    <div class="cbg-poster" style="background-image: url('posters/php.jpg');"></div>
+                    <div class="cbg-moviename-flex-container">
+                        <div style="color: white;">Comedy</div>
+                        <div style="font-size: 12px;color:#2a83f2;">+ Explore</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEE MORE -->
+    <div class="sm">See more</div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <!-- <div class="flex-container">
+            <div></div>
+            <div></div>
+        </div> -->
+
+        <div class="flex-container" style="padding-top:18px">
+            <div> <img src="icons/fb.png" height="30px"></div>
+            <div> <img src="icons/twitter.png" height="30px"></div>
+            <div> <img src="icons/apple.png" height="30px"></div>
+            <div> <img src="icons/ig.png" height="30px"></div>
+        </div>
+        <div class="flex-container" style="margin-top:15px">
+            <div>
+                <p style="margin: auto 40px;">About Flux</p>
+            </div>
+            <div>
+                <p style="margin: auto 40px;">Career</p>
+            </div>
+            <div>
+                <p style="margin: auto 40px;">FAQ</p>
+            </div>
+            <div>
+                <p style="margin: auto 40px;">Get the App</p>
+            </div>
+        </div>
+        <div class="flex-container" style="margin-top:15px">
+            <div>
+                <p style="margin: auto 30px;">Terms and policies</p>
+            </div>
+            <div>
+                <p style="margin: auto 30px;">Send Feedback</p>
+            </div>
+            <div>
+                <p style="margin: auto 30px;">Help</p>
+            </div>
+        </div>
+        <div class="flex-container" style="margin-top:20px">
+            <div><img src="icons/logo.png" height="30px"></div>
+        </div>
+        <div class="flex-container" style="margin-top:2px">
+            <div>
+                <p style="font-size: 10px;">c 1999-2020 by Flux.com, Inc.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
