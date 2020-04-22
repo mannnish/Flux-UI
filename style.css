@@ -26,7 +26,6 @@ p {
 body {
     background-color: #152535;
     font-family: poppins;
-
 }
 
 .nav-link:hover {
@@ -38,7 +37,10 @@ input::-webkit-input-placeholder {
     color: #b5bdbb !important;
 }
 
+
 /* topmost card */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
 
 .topmost {
     /* background-color: red; */
@@ -56,10 +58,11 @@ input::-webkit-input-placeholder {
     border-radius: 5px;
     background-color: #203345;
     /* box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4); */
-    background-size: auto 100%;
-    background-repeat: no-repeat;
     transition: 0.3s ease-in-out;
-    background-image: url('posters/mh_vertical.jpg');
+    background-image: url('posters/mh_vertical.jpg');    
+    background-size:     cover;              
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 #banner:hover {
@@ -71,10 +74,11 @@ input::-webkit-input-placeholder {
     height: 100%;
     width: 75%;
     border-radius: 5px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
     transition: 0.3s ease-in-out;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(21, 37, 53, 0.3), rgba(21, 37, 53, 1)), url('posters/moneyheist.jpg');
+    background-size:     cover;              
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 #playbutton {
@@ -132,7 +136,11 @@ input::-webkit-input-placeholder {
     margin-right: 1%;
 }
 
+
 /* fan fav. + Bollywood Binge */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
+
 .bb {
     color: white;
     width: 85%;
@@ -153,8 +161,9 @@ input::-webkit-input-placeholder {
     border-radius: 10px;
     background-color: #203345;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+    background-size:     cover;              
+    background-repeat:   no-repeat;
+    background-position: center center;
     transition: 0.3s ease-in-out;
     text-decoration: none;
     color: white;
@@ -198,6 +207,9 @@ input::-webkit-input-placeholder {
 }
 
 /* lang */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
+
 .lang {
     color: white;
     width: 85%;
@@ -205,30 +217,67 @@ input::-webkit-input-placeholder {
     margin-top: 50px;
     /* background-color: red; */
 }
-
-.lang-flex-container {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+ 
+@media screen and (max-width: 700px) {
+    .lang-flex-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .lang-flex-container>a{
+        height : 50px;
+        margin-top: 15px;  
+        width: 100%;  
+        border-radius: 10px;
+        box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        transition: 0.3s ease-in-out;   
+    }
+    
+    .lang-flex-container>a p{
+        display: block;
+        padding-top: 12px;
+        padding-left: 30px;
+        width: 100%;
+        height: 52px;
+        border-radius: 10px;
+        background-color: #203345;;
+    }
 }
 
-.lang-flex-container>a {
-    height: 130px;
-    width: 130px;
-    border-radius: 10px;
-    background-color: #203345;
-    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
-}
+@media screen and (min-width: 700px) {
+    .lang-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    .lang-flex-container>a {
+        height: 130px;
+        width: 130px;
+        margin-left : 10px;
+        margin-right : 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: #203345;
+        box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        transition: 0.3s ease-in-out;
+    }
+    .lang-flex-container>a p{
+        display: none;
+    }
+}
 .lang-flex-container>a:hover {
     box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.8);
 }
 
+
 /* top rated */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
+
 .tr {
     color: white;
     width: 85%;
@@ -247,7 +296,7 @@ input::-webkit-input-placeholder {
 }
 
 .tr-flex-container:hover .tr-poster {
-    background-size: 105% auto;
+    filter: saturate(1.5);
 }
 
 .tr-poster {
@@ -256,10 +305,11 @@ input::-webkit-input-placeholder {
     border-radius: 12px;
     width: 100%;
     height: 75%;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
     transition: 0.2s ease-in-out;
+    background-size:     cover;              
+    background-repeat:   no-repeat;
+    background-position: center center;
+    
 }
 
 .tr-moviename-flex-container {
@@ -271,28 +321,68 @@ input::-webkit-input-placeholder {
     color: white;
 }
 
-.tr-moviename-flex-container #one {
-    width: 10%;
-    background-image: url('icons/play.png');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
+@media screen and (max-width: 700px) {
+    .tr-moviename-flex-container #one{
+        display: none;
+    }
+    .tr-moviename-flex-container #three{
+        width: 25%;
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        margin-right: 1%;
+    }
+    .tr-moviename-flex-container #two #tr-title{
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .tr-moviename-flex-container #two #desc{
+        display: none;
+    }
 }
 
-.tr-moviename-flex-container #two {
-    width: 90%;
-}
 
-.tr-moviename-flex-container #three {
-    width: 10%;
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-    margin-right: 1%;
+@media screen and (min-width: 700px){
+    .tr-moviename-flex-container #one {
+        width: 10%;
+        background-image: url('icons/play.png');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+    }
+
+    .tr-moviename-flex-container #two {
+        width: 90%;
+    }
+
+    .tr-moviename-flex-container #two #tr-title{
+        margin-top: 15px;
+        font-size: 28px;
+    }
+
+    .tr-moviename-flex-container #two #desc{
+        margin-top: 2px;
+        color : #899398;
+        font-size: 14px;
+    }
+
+    .tr-moviename-flex-container #three {
+        width: 10%;
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        margin-right: 1%;
+    }
 }
 
 /* choose by genre */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
+
 .cbg {
     color: white;
     width: 85%;
@@ -301,14 +391,16 @@ input::-webkit-input-placeholder {
 }
 
 .cbg-flex-container {
-    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .cbg-flex-container>div {
     /* background-color: #ffad6f; */
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     height: 190px;
     width: 270px;
     background-color: #203345;
@@ -316,10 +408,6 @@ input::-webkit-input-placeholder {
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4);
 }
-
-/* .cbg-flex-container>div:hover {
-transform: scale(1.02);
-} */
 
 .cbg-poster {
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
@@ -331,7 +419,7 @@ transform: scale(1.02);
     background-position: center;
 }
 
-.cbg-flex-container>div:hover .cbg-poster{
+.cbg-flex-container>div:hover .cbg-poster {
     background-size: 110% auto;
 }
 
@@ -346,7 +434,11 @@ transform: scale(1.02);
     /* background-color: red; */
 }
 
+
 /* see more */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
+
 .sm {
     background-color: #203345;
     width: 85%;
@@ -366,31 +458,43 @@ transform: scale(1.02);
     box-shadow: 0 10px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
+
 /* footer */
+/*  ------------------------------------------------------------------------------------------- */
+/*  ------------------------------------------------------------------------------------------- */
+
 .footer {
     background-color: #203345;
     margin-top: 60px;
     margin-bottom: 15px;
-
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.flex-container>div {
-    /* background-color: #ffad6f; */
-    margin-left: 8px;
-    margin-right: 8px;
-    transition: 0.2s ease-in-out;
-}
-
-.flex-container>div {
-    color: #afb8bd;
 }
 
 .flex-container>div:hover {
     opacity: 0.6;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-container>div {
+        color: #afb8bd;
+        margin: 0px auto;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-container>div {
+        color: #afb8bd;
+        margin-left: 8px;
+        margin-right: 8px;
+        transition: 0.2s ease-in-out;
+    }
 }
