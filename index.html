@@ -6,11 +6,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -24,9 +21,7 @@
         </a>
 
         <!-- button -->
-        <button class="navbar-toggler" style="background-color: whitesmoke;" type="button" data-toggle="navbar-collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <button class="navbar-toggler" style="background-color: whitesmoke;" type="button" data-toggle="navbar-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -34,8 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" style="color: white; margin-right:20px" href="#">Home <span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="color: white; margin-right:20px" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: #b5bdbb;margin-right:20px" href="#">Movies</a>
@@ -52,13 +46,9 @@
             <!-- search -->
             <form class="form-inline">
                 <div class="input-group">
-                    <input type="text" class="form-control"
-                        style="background-color: #455662;border-radius: 5px 0px 0px 5px ;border : none;color:white"
-                        placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" style="background-color: #455662;border-radius: 5px 0px 0px 5px ;border : none;color:white" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"
-                            style="background-color: #455662;border-radius: 0px 5px 5px 0px;border : none;"
-                            id="basic-addon1">
+                        <span class="input-group-text" style="background-color: #455662;border-radius: 0px 5px 5px 0px;border : none;" id="basic-addon1">
                             <img src="icons/searchicon.png" alt="">
                         </span>
                     </div>
@@ -78,48 +68,21 @@
 
     <!-- topmost div -->
     <style>
-        .topmost {
-            /* background-color: red; */
-            height: 65%;
-            width: 85%;
-            margin: auto;
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #banner {
-            height: 97%;
-            width: 22.5%;  
-            border-radius: 5px;
-            background-color: #203345;
-            /* box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4); */
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            transition: 0.3s ease-in-out;
-            background-image: url('posters/mh_vertical.jpg');
-        }
-
-        #banner:hover {
-            box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.4);
-        }
-
-        #playmode {
-            height: 100%;
-            width: 75%;
-            /* background-color: yellow; */
-            border-radius: 5px;
-            /* background-color: #203345; */
-            /* box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.4); */
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            transition: 0.3s ease-in-out;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(21, 37, 53, 0.3), rgba(21, 37, 53, 1)), url('posters/moneyheist.jpg');
-        }
     </style>
     <div class="topmost">
         <div id="banner"></div>
-        <div id="playmode"></div>
+        <div id="playmode">
+            <div id="playbutton"><img src="icons/playicon.png"></div>
+            <div id="title">
+                <div id="one"></div>
+                <div id="two">
+                    <div style="margin-top: 15px; font-size: 28px;font-family: js-bold;">"Money Heist : Part 4"</div>
+                    <div style="margin-top: 2px;color : #899398; font-size: 14px;">Lives are on the line as the Professor's plan begins to unravel and the thieves must fend off enemies from both inside and outside the Bank of Spain.
+                    </div>
+                </div>
+                <div id="three"></div>
+            </div>
+        </div>
     </div>
 
     <!-- fan fav -->
@@ -188,7 +151,6 @@
             </a>
         </div>
     </div>
-
 
     <!-- Bollywood Binge -->
     <div class="bb">
@@ -276,7 +238,7 @@
         <span style="font-size: 25px;font-family: js-bold ;">| Top Rated</span>
         <div class="tr-flex-container">
             <div> <a href="tr.html" style="text-decoration: none;">
-                    <div class="tr-poster" style="background-image: url('posters/avenger.jpg');"></div>
+                    <div class="tr-poster"></div>
                     <div class="tr-moviename-flex-container">
                         <div id="one"></div>
                         <div id="two">
