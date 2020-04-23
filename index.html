@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </head>
 
 <script>
@@ -23,22 +28,23 @@
     <!-- loading spinner -->
     <div class="wrapper" id="loader">
         <div class="loading-spinner"></div>
-        <div class="flux-logo"><img src="icons/logo.png" height="15px" width=auto ></div>
+        <div class="flux-logo"><img src="icons/logo.png" height="15px" width=auto></div>
     </div>
 
     <!-- screen content -->
     <div class="screen hide" id="screen-content">
         <!-- NAV BAR -->
-        <nav class="navbar navbar-expand-lg " style="padding-top:0px; height: 60px; background-color: #203345;">
+        <nav class="navbar navbar-expand-lg " style="padding-top:0px; background-color: #203345;">
             <!-- logo -->
             <a class="navbar-brand" href="#">
                 <img src="icons/logo.png" height="40px" style="margin-top:10px; margin-left: 50px;" alt="">
             </a>
 
             <!-- button -->
-            <button class="navbar-toggler collapsed" type="button" data-toggle="navbar-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: #2a83f2 !important;" ></i></span>
             </button>
+
 
             <!-- list options -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,9 +62,7 @@
                         <a class="nav-link" style="color: #b5bdbb; margin-right:30px" href="#">Kids</a>
                     </li>
                 </ul>
-
-                <!-- search -->
-                <form class="form-inline">
+                <form class="form-inline my-2 my-lg-0">
                     <div class="input-group">
                         <input type="text" class="form-control" style="background-color: #455662;border-radius: 5px 0px 0px 5px ;border : none;color:white" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
                         <div class="input-group-prepend">
@@ -68,16 +72,11 @@
                         </div>
                     </div>
                 </form>
-
-                <!-- user icon -->
                 <span class="navbar-text">
                     <img src="icons/usericon.png" height="30px" style="margin-left: 15px; margin-right: 40px;" alt="">
                 </span>
             </div>
         </nav>
-
-        <!-- <div style="height: 80%;width: 70%;text-align: center;margin: 15px auto;">
-    </div> -->
 
         <!-- topmost div -->
         <style>
@@ -174,7 +173,10 @@
                         <div id="playdet">
                             <div style="width: 15%;"> <img src="icons/play.png" height="100%"> </div>
                             <div style="width: 80%;padding-left: 5%;">Yeh Jawani Hai Deewani</div>
-                            <div> <img src="icons/plus.png" height="50%"></div>
+                            <div> 
+                                <img src="icons/plus.png" height="50%">
+                                <!-- <i class="fas fa-plus" style="font-size: 15px;" ></i> -->
+                            </div>
                         </div>
                         <p style="font-size:11px;">Kabir, a guy who wants to make it big in the travel industry, meets Naina
                             during a trekking trip.</p>
@@ -332,11 +334,12 @@
         </div> -->
 
             <div class="flex-container" id="social-icons">
-                <div> <img src="icons/fb.png" height="30px"></div>
-                <div> <img src="icons/twitter.png" height="30px"></div>
-                <div> <img src="icons/apple.png" height="30px"></div>
-                <div> <img src="icons/ig.png" height="30px"></div>
+                <div> <i class="fab fa-facebook-square"></i> </div>
+                <div> <i class="fab fa-twitter-square"></i></div>
+                <div> <i class="fab fa-imdb"></i></div>
+                <div> <i class="fab fa-instagram"></i></div>
             </div>
+
             <div class="flex-container" style="margin-top:15px">
                 <div>
                     <p style="margin: auto 40px;">About Flux</p>
@@ -374,4 +377,4 @@
     </div>
 </body>
 
-</html>
+</html> 
